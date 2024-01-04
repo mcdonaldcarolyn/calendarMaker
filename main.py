@@ -46,7 +46,7 @@ def getCalendarFor(year, month):
     while currentDate.weekday() != 6:
         currentDate -= datetime.timedelta(days=1)
 
-    while True
+    while True:
         calText += weekSeparator
 
         dayNumberRow = ''
