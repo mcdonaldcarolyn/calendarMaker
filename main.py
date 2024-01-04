@@ -51,8 +51,8 @@ def getCalendarFor(year, month):
 
         dayNumberRow = ''
         for i in range(7):
-            daynumberLabel = str(currentDate.day).rjust(2)
-            daynumberRow += '|' + dayNumberLabel + (' ' * 8)
+            dayNumberLabel = str(currentDate.day).rjust(2)
+            dayNumberRow += '|' + dayNumberLabel + (' ' * 8)
             currentDate += datetime.timedelta(days=1)
         dayNumberRow += '|\n'
 
