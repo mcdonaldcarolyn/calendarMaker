@@ -57,7 +57,7 @@ def getCalendarFor(year, month):
         dayNumberRow += '|\n'
 
         calText += dayNumberRow
-        for i in range(3) 
+        for i in range(3): 
             calText += blankRow
 
         if currentDate.month != month:
