@@ -25,7 +25,7 @@ while True:
         continue
 
     month = int(response)
-    if 1<= month <= 12:
+    if 1 <= month <= 12:
         break
 
     print ('please end a number from 1 to 12.')
@@ -33,7 +33,7 @@ while True:
 def getCalendarFor(year, month):
     calText = ''
 
-    calText += (' ' *34) + MONTHS[month - 1] + ' ' + str(year) + '\n'
+    calText += (' ' * 34) + MONTHS[month - 1] + ' ' + str(year) + '\n'
 
     calText += '...Sunday.....Monday....Tuesday....Wednesday....Thursday....Friday....Saturday  \n'
 
@@ -52,8 +52,8 @@ def getCalendarFor(year, month):
         dayNumberRow = ''
         for i in range(7):
             daynumberLabel = str(currentDate.day).rjust(2)
-            daynumberRow += '|' + dayNumberLabel + (' ' * 8 )
-            currentDate += datetime.timedelta(days= 1)
+            daynumberRow += '|' + dayNumberLabel + (' ' * 8)
+            currentDate += datetime.timedelta(days=1)
         dayNumberRow += '|\n'
 
         calText += dayNumberRow
